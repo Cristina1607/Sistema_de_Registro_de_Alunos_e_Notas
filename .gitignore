@@ -1,0 +1,58 @@
+```gitignore
+# Ignorar arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignorar arquivos de ambiente de desenvolvimento
+.env
+
+# Ignorar arquivos de banco de dados locais
+*.sql
+
+# Desafio Técnico: Sistema de Registro de Alunos e Notas
+
+## Enunciado
+Você foi contratado por uma instituição de ensino para desenvolver um sistema de registro de alunos e suas notas em diversos cursos. O objetivo é criar um banco de dados relacional utilizando SQL para gerenciar as informações de alunos, cursos e notas. Seu sistema deve permitir operações básicas de inserção, consulta, atualização e exclusão de dados.
+
+## Tarefas
+### 1. Criação do Banco de Dados
+- Crie um banco de dados chamado `Escola`.
+
+### 2. Criação das Tabelas
+- **Tabela Alunos**: Deve conter os seguintes campos:
+  - `id_aluno` (chave primária, auto incremento)
+  - `nome` (nome do aluno)
+  - `data_nascimento` (data de nascimento do aluno)
+  - `endereço` (endereço do aluno)
+- **Tabela Cursos**: Deve conter os seguintes campos:
+  - `id_cursos` (chave primária, auto incremento)
+  - `nome_curso` (nome do curso)
+  - `descricao` (descrição do curso)
+- **Tabela Notas**: Deve conter os seguintes campos:
+  - `id_nota` (chave primária, auto incremento)
+  - `id_aluno` (chave estrangeira referenciando Alunos)
+  - `id_cursos` (chave estrangeira referenciando Cursos)
+  - `nota` (nota atribuída ao aluno no curso)
+
+### 3. Inserção de Dados
+- Insira ao menos 3 alunos na tabela `Alunos`.
+- Insira ao menos 3 cursos na tabela `Cursos`.
+- Insira ao menos 5 registros de notas na tabela `Notas`.
+
+### 4. Consultas
+- Liste todos os alunos juntamente com as notas que eles obtiveram em cada curso.
+- Calcule a média das notas para cada curso.
+- Encontre o aluno com a maior nota em cada curso.
+
+### 5. Atualização de Dados
+- Atualize a nota de um aluno em um curso específico.
+- Modifique o endereço de um aluno para um novo endereço.
+
+### 6. Exclusão de Dados
+- Exclua um aluno e todas as suas notas associadas.
+- Remova um curso e todas as notas associadas a esse curso.
+
+## Entrega
+Submeta o código SQL completo em um arquivo `.sql` e inclua um documento explicativo com uma breve descrição das tabelas e das operações realizadas.
