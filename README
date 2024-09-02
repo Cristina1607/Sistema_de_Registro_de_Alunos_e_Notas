@@ -1,0 +1,33 @@
+# Sistema de Registro de Alunos e Notas
+
+## Descrição
+Este projeto implementa um sistema de gerenciamento de alunos, cursos e notas utilizando SQL. Ele permite a criação de um banco de dados relacional com tabelas associadas, permitindo operações básicas de inserção, consulta, atualização e exclusão de dados, além de trabalhar com relacionamentos entre as tabelas.
+
+## Funcionalidades
+- **Registro de Alunos**: Permite inserir, consultar, atualizar e excluir dados de alunos.
+- **Registro de Cursos**: Permite inserir, consultar, atualizar e excluir cursos.
+- **Registro de Notas**: Permite associar notas a alunos e cursos, e consultar as notas atribuídas.
+- **Consultas Avançadas**: Inclui consultas para listar alunos com suas notas, calcular a média das notas por curso e encontrar o aluno com a maior nota em cada curso.
+- **Atualizações e Exclusões**: Suporta operações para atualizar dados de alunos e notas, e excluir registros específicos.
+
+## Estrutura do Banco de Dados
+- **Tabela Alunos**: Armazena informações sobre os alunos (nome, data de nascimento, endereço).
+- **Tabela Cursos**: Armazena informações sobre os cursos (nome do curso, descrição).
+- **Tabela Notas**: Armazena as notas dos alunos nos cursos (nota, aluno, curso).
+
+## Como Usar
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Cristina1607/Sistema_de_Registro_de_Alunos_e_Notas.git
+2. Execute o arquivo SQL Sistema_de_Registro_de_Alunos_e_Notas.sql no seu banco de dados SQL para criar o banco de dados e as tabelas.
+3. Personalize as consultas SQL conforme necessário para atender aos requisitos específicos.
+
+Requisitos
+MySQL ou outro SGBD compatível.
+Acesso ao ambiente de linha de comando SQL.
+
+Autor
+Desenvolvido por [Cristina].
+
+Licença
+Este projeto está licenciado sob a Licença MIT.
